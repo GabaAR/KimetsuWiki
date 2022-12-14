@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="imagens/icon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimetsu no Yaiba</title>
+
+</head>
+
+<body>
+    <div class="body">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"> <img src="imagens/Obanai.png" alt="" width="68px" height="88px"> Kimetsu
+                no Yaiba
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Página Principal <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novidades <i class="fa-solid fa-mug-hot"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mangá <i class="fa-solid fa-bookmark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anime <i class="fa-solid fa-tv"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Podcast <i class="fa-solid fa-microphone"></i></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Personagens
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="Regra1.html">Tanjiro Kamado </a>
+                            <a class="dropdown-item" href="Regra2.html">Nezuko Kamado </a>
+                            <a class="dropdown-item" href="Regra3.html">Giyu Tomioka </a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Administradores <i class="fa-solid fa-user-secret"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidade <i class="fa-solid fa-users-rays"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dúvidas <i class="fa-solid fa-question"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button type="button" class="btn btn-outline-dark"> Pesquisar </button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name=" radio-btn" id="radio1">
+                <input type="radio" name=" radio-btn" id="radio2">
+                <input type="radio" name=" radio-btn" id="radio3">
+                <!--Botões-->
+
+                <!--Imagens-->
+                <div class="slide first">
+                    <img src="imagens/MugenTrain.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Ferreiros.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Distrito.jpeg" alt="">
+                </div>
+
+
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++
+
+                if (counter > 3) {
+                    counter = 1;
+                }
+            }, 6000);
+        </script>
+
+        <div class="resume">
+            <div class="card-menu">
+                <br>
+                <h2><img src="imagens/icon.jpg" alt="" width="50px" height="50px"> Kimetsu No Yaiba WIKI </h2>
+                <br>
+
+                <p> Esta é uma Wiki sobre Kimetsu no Yaiba que foi criado por fã, para os fãs, e é dedicado a abrigar um
+                    banco de dados útil e informativo para todos os assuntos relacionados à série Kimetsu no Yaiba de
+                    Koyoharu Gotōge. Qualquer um pode editar! Nós encorajamos os usuários a ajudar a melhorar este wiki
+                    ainda mais. Verifique os links acima para ter uma ideia de como funciona a edição de wiki. </p>
+                <br>
+                <img src="imagens/hashiras.png.png" alt="" width="533px" height="287px">
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid text-center prod">
+
+            <h2 class="pd">Conheça mais sobre KNY <img src="imagens/icon.jpg" alt="" width="40px" height="40px"> :</h2>
+            <br>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 box2 teste">
+                        <h2> Arco Distrito do Entretenimento:</h2>
+                        <div class="des">
+                            <button type="button" class="btn btn-outline-light">Confira</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 box3 teste2">
+                        <h2> Mangá:</h2>
+                        <div class="des">
+                            <button type="button" class="btn btn-outline-light">Confira</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 box4 teste3">
+                        <h2> Novidades:</h2>
+                        <div class="des">
+                            <button type="button" class="btn btn-outline-light">Confira</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <br><br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+        <div class="container-fluid cor">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 dist">
+                        <h4><strong>Central de Atendimento:</strong></h4>
+                        <br>
+                        <h6><i class="fa-solid fa-envelope"></i> Email: gaba@hotmail.com</h6>
+                        <h6><i class="fa-sharp fa-solid fa-phone"></i> Telefone: (34)96523-2589</h6>
+                        <h6></h6>
+                    </div>
+
+                    <div class="col-md-6 dist">
+                        <h4><strong>Créditos:</strong></h4>
+                        <form>
+                            <br>
+                            <div class="form-group">
+                                <h6><i class="fa-brands fa-github"></i> GitHub: GabaAR</h6>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-outline-light">Saiba Mais<a class="link"
+                                    href="https://github.com/GabaAR"></a></button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
